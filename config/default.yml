@@ -3,19 +3,14 @@ server:
 application:
   domain: juice-sh.op
   name: 'OWASP Juice Shop'
-  logo: JuiceShop_Logo.png
-  favicon: favicon_js.ico
+  logo: JuiceShopCTF_Logo.png
+  favicon: favicon_ctf.ico
   theme: bluegrey-lightgreen # Options: bluegrey-lightgreen blue-lightblue deeppurple-amber indigo-pink pink-bluegrey purple-green deeporange-indigo
   showChallengeSolvedNotifications: true
-  showChallengeHints: true
-  showVersionNumber: true
-  showGitHubLinks: true
-  numberOfRandomFakeUsers: 0
-  twitterUrl: 'https://twitter.com/owasp_juiceshop'
-  facebookUrl: 'https://www.facebook.com/owasp.juiceshop'
-  slackUrl: 'http://owaspslack.com'
-  redditUrl: 'https://www.reddit.com/r/owasp_juiceshop'
-  pressKitUrl: 'https://github.com/OWASP/owasp-swag/tree/master/projects/juice-shop'
+  showChallengeHints: false
+  showVersionNumber: false
+  showGitHubLinks: false
+  numberOfRandomFakeUsers: 5
   planetOverlayMap: orangemap2k.jpg
   planetName: Orangeuze
   recyclePage:
@@ -23,7 +18,7 @@ application:
     bottomProductImage: apple_pressings.jpg
   altcoinName: Juicycoin
   welcomeBanner:
-    showOnFirstStart: true
+    showOnFirstStart: false
     title: 'Welcome to OWASP Juice Shop!'
     message: "<p>Being a web application with a vast number of intended security vulnerabilities, the <strong>OWASP Juice Shop</strong> is supposed to be the opposite of a best practice or template application for web developers: It is an awareness, training, demonstration and exercise tool for security risks in modern web applications. The <strong>OWASP Juice Shop</strong> is an open-source project hosted by the non-profit <a href='https://owasp.org' target='_blank'>Open Web Application Security Project (OWASP)</a> and is developed and maintained by volunteers. Check out the link below for more information and documentation on the project.</p><h1><a href='https://owasp-juice.shop' target='_blank'>https://owasp-juice.shop</a></h1>"
   cookieConsent:
@@ -45,9 +40,9 @@ application:
     subtitles: JuiceShopJingle.vtt
 challenges:
   safetyOverride: false
-  overwriteUrlForProductTamperingChallenge: 'https://owasp.slack.com'
+  overwriteUrlForProductTamperingChallenge: 'https://ctf.7ei.cc'
 hackingInstructor:
-  isEnabled: true
+  isEnabled: false
   avatarImage: juicyBot.png
 products:
   -
@@ -261,6 +256,6 @@ memories:
     caption: 'My rare collectors item! [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]'
     user: bjoernGoogle
 ctf:
-  showFlagsInNotifications: false
+  showFlagsInNotifications: true
   showCountryDetailsInNotifications: none # Options: none  name  flag  both
   countryMapping: ~
