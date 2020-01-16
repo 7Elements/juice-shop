@@ -39,7 +39,7 @@ application:
     video: JuiceShopJingle.mp4
     subtitles: JuiceShopJingle.vtt
 challenges:
-  safetyOverride: false
+  safetyOverride: true
   overwriteUrlForProductTamperingChallenge: 'https://ctf.7ei.cc'
 hackingInstructor:
   isEnabled: false
